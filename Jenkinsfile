@@ -25,12 +25,11 @@ pipeline {
 	stage ("Publish Code Coverage") {
             steps{
 				echo "Publish code coverage"
-				cobertura()
-
-
+				cobertura path: 'coverage.xml'
 
             }
         }
     }
 
 }
+
